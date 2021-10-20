@@ -1,0 +1,214 @@
+version: "2.0"
+stories:
+ #- story: greet and subscribe
+  # steps:
+   #- intent: greet
+   #- action: utter_greet
+   #- intent: subscribe
+   #- action: newsletter_form
+   #- active_loop: newsletter_form
+
+ - story: greet
+   steps:
+   - intent: greet
+   - action: utter_greet
+   
+ - story: bye
+   steps:
+   - intent: bye
+   - action: utter_bye
+
+ #- story: subscribe
+  # steps:
+   #- intent: subscribe
+   #- action: newsletter_form
+   #- active_loop: newsletter_form
+   
+
+ - story: thanks
+   steps:
+   - intent: thanks
+   - action: utter_thanks
+   
+ - story: fine
+   steps:
+   - intent: fine
+   - action: utter_fine
+   - intent: greet
+   - action: utter_greet
+   
+ #- story: product1
+   #steps:
+   #- intent: product1
+   #- action: utter_product1
+   #- action: get_product_name
+   #- action: utter_name
+   
+ - story: information
+   steps:
+   - intent: information
+   - action: utter_email
+   - intent: email
+   - action: utter_thanks_Will_Get_Back
+   
+ 
+ - story: interactive_story_1
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: new_product
+   - action: utter_new_products
+   - intent: product1
+   - action: utter_product1
+   - action: get_product_name
+   - slot_was_set:
+     - product: product1
+   - action: utter_name
+   - intent: information
+     entities:
+     - name: Niharika Shah
+   - slot_was_set:
+     - name: Niharika Shah
+   - action: utter_email
+   - intent: email
+     entities:
+     - email1: niharikashah145@gmail.com
+   - slot_was_set:
+     - email1: niharikashah145@gmail.com
+   - action: utter_thanks_Will_Get_Back
+   - action: action_save_data
+   - intent: thanks
+   - action: action_reset_all_slots
+   - action: utter_thanks
+   - intent: bye
+   - action: utter_bye
+  
+
+ - story: interactive_story_2
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: new_product
+   - action: utter_new_products
+   - intent: product2
+   - action: utter_product2
+   - action: get_product_name
+   - slot_was_set:
+     - product: product2
+   - action: utter_name
+   - intent: information
+     entities:
+     - name: Niharika Shah
+   - slot_was_set:
+     - name: Niharika Shah
+   - action: utter_email
+   - intent: email
+     entities:
+     - email1: niharikashah145@gmail.com
+   - slot_was_set:
+     - email1: niharikashah145@gmail.com
+   - action: utter_thanks_Will_Get_Back
+   - action: action_save_data
+   - intent: thanks
+   - action: action_reset_all_slots
+   - action: utter_thanks
+   - intent: bye
+   - action: utter_bye
+  
+ - story: interactive_story_3
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: new_product
+   - action: utter_new_products
+   - intent: product3
+   - action: utter_product3
+   - action: get_product_name
+   - slot_was_set:
+     - product: product3
+   - action: utter_name
+   - intent: information
+     entities:
+     - name: Niharika Shah
+   - slot_was_set:
+     - name: Niharika Shah
+   - action: utter_email
+   - intent: email
+     entities:
+     - email1: niharikashah145@gmail.com
+   - slot_was_set:
+     - email1: niharikashah145@gmail.com
+   - action: utter_thanks_Will_Get_Back
+   - action: action_save_data
+   - intent: thanks
+   - action: action_reset_all_slots
+   - action: utter_thanks
+   - intent: bye
+   - action: utter_bye
+  
+  
+ - story: interactive_story_4
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: new_product
+   - action: utter_new_products
+   - intent: product4
+   - action: utter_product4
+   - action: get_product_name
+   - slot_was_set:
+     - product: product4
+   - action: utter_name
+   - intent: information
+     entities:
+     - name: Niharika Shah
+   - slot_was_set:
+     - name: Niharika Shah
+   - action: utter_email
+   - intent: email
+     entities:
+     - email1: niharikashah145@gmail.com
+   - slot_was_set:
+     - email1: niharikashah145@gmail.com
+   - action: utter_thanks_Will_Get_Back
+   - action: action_save_data
+   - intent: thanks
+   - action: action_reset_all_slots
+   - action: utter_thanks
+   - intent: bye
+   - action: utter_bye
+
+
+ - story: list_of_new_products
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: new_product
+   - action: utter_new_products
+
+ - story: complain
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: complain_info
+   #- action: complain_form
+   - action: get_complain_info
+   - action: utter_name
+   - intent: information
+     entities:
+     - name: Niharika Shah
+   - slot_was_set:
+     - name: Niharika Shah
+   - action: utter_email
+   - intent: email
+     entities:
+     - email1: niharikashah145@gmail.com
+   - slot_was_set:
+     - email1: niharikashah145@gmail.com
+   - action: utter_thanks_Will_Get_Back
+   - action: action_save_data
+   - intent: thanks
+   - action: action_reset_all_slots
+   - action: utter_thanks
+   - intent: bye
+   - action: utter_bye

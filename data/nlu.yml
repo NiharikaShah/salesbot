@@ -1,0 +1,158 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hey!
+    - Hallo
+    - Good day
+    - Good morning
+    - hello
+    - hi
+- intent: subscribe
+  examples: |
+    - I want to get the newsletter
+    - Can you send me the newsletter?
+    - Can you sign me up for the newsletter?
+    - I want to subscribe
+    - How can I subscribe?
+- intent: bye
+  examples: |
+    - Bye!
+    - Bye
+    - I am leaving the chat, bye!
+    - I am going
+    - Goodbye
+    - I am busy and leaving
+    - Talk to you later
+    - See Ya
+    - goodbye
+- intent: thanks
+  examples: |
+    - Thanks!
+    - thanks
+    - Thank You!
+    - thans
+- intent: fine
+  examples: |
+    - How are you?
+    - Hows you?
+    - Whats up man?
+- intent: product1
+  examples: |
+    - I want to buy product1
+    - product1
+    - I want info of product1
+    - I need product1
+    - i need info on product1
+    - i want product1
+    - i am thinking to buy product1
+    - our company wants to buy product1
+- intent: product2
+  examples: |
+    - I want to buy product2
+    - product2
+    - I want info of product2
+    - I need product2
+    - i need info on product2
+    - i want product2
+    - i am thinking to buy product2
+    - our compamy wants to buy product2
+- intent: product3
+  examples: |
+    - I want to buy product3
+    - product3
+    - I want info of product3
+    - I need product3
+    - i need info on product3
+    - i want product3
+    - i am thinking to buy product3
+    - our company wants to buy product3
+- intent: product4
+  examples: |
+    - I want to buy product4
+    - product4
+    - I want info of product4
+    - I need product4
+    - i need info on product4
+    - i want product4
+    - i am thinking to buy product4
+    - our compamy wants to buy product4
+- intent: information
+  examples: |
+    - My name is [Niharika Shah](name)
+    - [Niharika](name)
+    - [John Edward](name)
+    - I am [Bella](name)
+    - [James](name)
+    - [John S](name)
+    - [Robert](name)
+    - [Liam Noah](name)
+    - [Emma](name)
+    - [Neha k](name)
+    - My name is [Mark Henry](name) and my email id is(email1)
+    - I am [Keny](name) and email -(email1)
+    - [Niharika Shah](name)
+    - My name is [Janak Shah](name)
+    - Mimaa{"entity": "name"}
+    - Elizabeth{"entity": "name"}
+    - I am [Monica Geller](name)
+    - My name is Phoebe{"entity": "name"}
+    - [Rachel Green](name)
+    - You can call me [Chandler Bing](name)
+    - My name is [Joey Tribaini]{"entity": "name"}
+    - Hello! I am [Ross Geller](name)
+    - My name is [Monica Geller](name)
+    - my name is [Niharika Shah](name)
+    - [Niharika Shah](name)
+- intent: email
+  examples: |
+    - [niharikashah145@gmail.com](email1)
+    - [Niharika@yahoo.com](email1)
+    - My email is [example@example.com](email1)
+    - [random@example.com](email1)
+    - Please send it to [anything@example.com](email1)
+    - Email is [something@example.com](email1)
+    - [niharikashah145@gmail.com](email1)
+- intent : new_product
+  examples: |
+    - list of new products
+    - I want list of new products
+    - I need to buy new products
+    - Can you please give me info of new products
+    - I want list of all products avaialable
+    - Can i get list of all products 
+    - Give me list of new products
+    - Give me list of products
+    - list of products
+    - Products available
+    - Products
+
+ 
+- intent: complain_contact
+  examples: |
+    - [+91 8793378339](complain_contact)
+    - [+91 9595818825](complain_contact)
+    - My contact is [8793378344](complain_contact)
+    - [9325504031](complain_contact)
+    - Please call me [8149150300](complain_contact)
+
+    
+   
+- intent: complain_info
+  examples: |
+    - My product is not working
+    - This is a pathetic product
+    - I need to repair the product
+    - I want replacement of product
+    - Not got delivery yet
+    - I want my money back
+    - Not able to open the product
+    - I want to exchange this
+    - Want to return this thing
+    -  Got duplicate product
+    - Not happy with this item
+    - Got wrong product delivered
+    -  I did not order this item
+    - I dont want this item
+    

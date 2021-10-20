@@ -1,0 +1,10 @@
+version: "2.0"
+#rules:
+ #- rule: product1
+  # condition:
+   #- active_loop: lead_form
+   #steps:
+   #- intent: information
+   #- action: lead_form
+   #- active_loop: lead_form
+   #- action: utter_thanks_Will_Get_Back

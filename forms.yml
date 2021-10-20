@@ -1,0 +1,29 @@
+forms:
+  newsletter_form:
+    required_slots:
+      email:
+      - type: from_text
+      
+  lead_complain_form:
+    #required_slots:
+      name:
+      - type: from_entity
+        entity: name
+      email1:
+      - type: from_entity
+        entity: email1
+      product:
+      - type: from_text
+      complain:
+      - type: from_text 
+      
+  #complain_form:
+    #required_slots:
+     # name_complain:
+     # - type: from_entity
+      #  entity: name_complain
+      #complain_contact:
+      #- type: from_entity
+       # entity: complain_contact
+      #complain:
+      #- type: from_text   

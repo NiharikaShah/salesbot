@@ -1,0 +1,165 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
+intents:
+- product2
+- email
+- thanks
+- information
+- greet
+- bye
+- inform
+- subscribe
+- fine
+- product1
+- product3
+- product4
+- lead_name
+- lead_email
+- interactive_story_1
+- interactive_story_2
+- interactive_story_3
+- interactive_story_4
+- new_product
+- info_about_product
+- complain_info
+- information_complain
+- email_complain
+- complain_contact
+entities:
+- email1
+- name
+- name_complain
+- complain_contact
+slots:
+  name:
+    type: unfeaturized
+    influence_conversation: false
+  email1:
+    type: unfeaturized
+    influence_conversation: false
+  product:
+    type: unfeaturized
+    influence_conversation: false
+  complain:
+    type: unfeaturized
+    influence_conversation: false
+  name_complain:
+    type: unfeaturized
+    influence_conversation: false
+  complain_contact:
+    type: unfeaturized
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: |
+      Hello! How can I help you?
+  - text: |
+      Hi!
+  utter_subscribed:
+  - text: |
+      Check your inbox at {email} in order to finish subscribing to the newsletter!
+  - text: You are all set! Check your inbox at {email} to confirm your subscription.
+  utter_bye:
+  - text: |
+      Bye! Have a good day!
+  - text: |
+      GoodBye!
+  utter_thanks:
+  - text: |
+      You are welcome!
+  - text: |
+      Glad that helped you!
+  utter_fine:
+  - text: |
+      I am fine, Thank You! How can i help you?
+  utter_product1:
+  - text: |
+      Here is info about product1-Product1 is available.It costs 100 Euros. We can provide discount as well!
+  utter_product2:
+  - text: |
+      Here is info about product2-Product2 is available.It costs 50 Euros. We can provide discount as well!    
+  utter_product3:
+  - text: |
+      Here is info about product3-Product3 is available.It costs 100 Euros. We can provide discount as well!
+  utter_product4:
+  - text: |
+      Here is info about product4-Product4 is available.It costs 100 Euros. We can provide discount as well!    
+  utter_name:
+  - text: |
+      Can you please tell me your name?
+  utter_thanks_Will_Get_Back:
+  - text: |
+      Thanks!Our Team will get back to you!
+  utter_email:
+  - text: |
+      Can you provide your email-id?
+  utter_new_products:
+  - text: |
+      Here is list of new products. Please let us know which product you are interested in-
+      1. Product1
+      2. Product2
+      3. Product3
+      4. Product4
+  utter_thanks_Will_Get_Back_Complain:
+  - text: |
+      Sorry for the trouble. We have noted your complain and we are working on it.
+  utter_contactnumber:
+  - text: |
+      Please provide us with your contact number.
+  utter_name_complain:
+  - text: |
+      Can you please tell me your name?
+  utter_contact_complain:
+  - text: |
+      Can you provide your contact number?
+actions:
+- '...'
+- action_save_data
+- get_product_name
+- get_complain_info
+- action_save_data_complain
+- action_reset_all_slots
+- utter_ask_email
+- utter_bye
+- utter_email
+- utter_fine
+- utter_greet
+- utter_name
+- utter_product1
+- utter_product2
+- utter_product3
+- utter_product4
+- utter_subscribed
+- utter_thanks
+- utter_thanks_Will_Get_Back
+- utter_new_products
+- utter_thanks_Will_Get_Back_Complain
+- utter_contactnumber
+- utter_name_complain
+- utter_contact_complain
+forms:
+  lead_complain_form:
+    #required_slots:
+      name:
+      - type: from_entity
+        entity: name
+      email1:
+      - type: from_entity
+        entity: email1
+      product:
+      - type: from_text
+      complain:
+      - type: from_text 
+      
+  #complain_form:
+   # required_slots:
+    #  name_complain:
+     # - type: from_entity
+      #  entity: name_complain
+      #complain_contact:
+      #- type: from_entity
+       # entity: complain_contact
+      #complain:
+      #- type: from_text   
